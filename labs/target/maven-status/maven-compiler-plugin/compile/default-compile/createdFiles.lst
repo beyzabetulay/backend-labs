@@ -1,0 +1,6 @@
+backend/port/BankAccountRepository.class
+backend/persistence/BankAccountEntity.class
+backend/controller/BankAccountController.class
+backend/persistence/DatabaseAdapter.class
+backend/domain/MoneyTransferService.class
+backend/domain/BankAccount.class

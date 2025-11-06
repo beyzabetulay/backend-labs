@@ -1,0 +1,6 @@
+/home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/controller/BankAccountController.java
+/home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/domain/BankAccount.java
+/home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/domain/MoneyTransferService.java
+/home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/persistence/BankAccountEntity.java
+/home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/persistence/DatabaseAdapter.java
+/home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/port/BankAccountRepository.java
