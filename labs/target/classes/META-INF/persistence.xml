@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_1.xsd"
+             version="3.1">
+
+    <persistence-unit name="bankPU" transaction-type="RESOURCE_LOCAL">
+        <!-- JPA Provider -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        
+        <!-- Entity sınıflarını belirt -->
+        <class>backend.persistence.entity.AccountEntity</class>
+        <class>backend.persistence.entity.TransactionEntity</class>
+        
+        <properties>
+            <!-- H2 Database bağlantı ayarları -->
+            <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:~/bankdb;DB_CLOSE_DELAY=-1"/>
+            <property name="jakarta.persistence.jdbc.user" value="sa"/>
+            <property name="jakarta.persistence.jdbc.password" value=""/>
+            
+            <!-- Hibernate ayarları -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <!-- Öğrenim için tabloyu her çalıştırmada baştan kur (basit, eski kolon kalıntıları yok) -->
+            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+            
+          <!-- Use default Hibernate connection provider (HikariCP integration requires extra module).
+              Keep configuration minimal for the exercise (H2 embedded DB). -->
+        </properties>
+    </persistence-unit>
+</persistence>

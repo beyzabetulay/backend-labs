@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="backend.BankingServiceTest" time="1.232" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/karatas/Documents/backend/backend-labs/labs/target/test-classes:/home/karatas/Documents/backend/backend-labs/labs/target/classes:/home/karatas/.m2/repository/com/h2database/h2/2.2.220/h2-2.2.220.jar:/home/karatas/.m2/repository/org/hibernate/orm/hibernate-core/6.2.7.Final/hibernate-core-6.2.7.Final.jar:/home/karatas/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/karatas/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/home/karatas/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/karatas/.m2/repository/io/smallrye/jandex/3.0.5/jandex-3.0.5.jar:/home/karatas/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/karatas/.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:/home/karatas/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/home/karatas/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar:/home/karatas/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar:/home/karatas/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar:/home/karatas/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/home/karatas/.m2/repository/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar:/home/karatas/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/home/karatas/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/karatas/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/karatas/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/karatas/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/karatas/.m2/repository/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1.jar:/home/karatas/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/home/karatas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/home/karatas/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/karatas/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/home/karatas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/karatas/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/home/karatas/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/home/karatas/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="java.vm.vendor" value="Debian"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://tracker.debian.org/openjdk-21"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/karatas/Documents/backend/backend-labs/labs/target/surefire/surefirebooter-20251108121347981_3.jar /home/karatas/Documents/backend/backend-labs/labs/target/surefire 2025-11-08T12-13-47_910-jvmRun1 surefire-20251108121347981_1tmp surefire_0-20251108121347981_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/karatas/Documents/backend/backend-labs/labs/target/test-classes:/home/karatas/Documents/backend/backend-labs/labs/target/classes:/home/karatas/.m2/repository/com/h2database/h2/2.2.220/h2-2.2.220.jar:/home/karatas/.m2/repository/org/hibernate/orm/hibernate-core/6.2.7.Final/hibernate-core-6.2.7.Final.jar:/home/karatas/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/karatas/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/home/karatas/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/karatas/.m2/repository/io/smallrye/jandex/3.0.5/jandex-3.0.5.jar:/home/karatas/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/karatas/.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:/home/karatas/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/home/karatas/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar:/home/karatas/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar:/home/karatas/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar:/home/karatas/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/home/karatas/.m2/repository/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar:/home/karatas/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/home/karatas/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/karatas/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/karatas/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/karatas/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/karatas/.m2/repository/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1.jar:/home/karatas/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/home/karatas/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/home/karatas/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/karatas/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/home/karatas/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/karatas/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/home/karatas/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/home/karatas/.m2/repository/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/karatas"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/karatas/Documents/backend/backend-labs/labs"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/karatas/Documents/backend/backend-labs/labs/target/surefire/surefirebooter-20251108121347981_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.9+10-Debian-1"/>
+    <property name="user.name" value="karatas"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.16.8+kali-amd64"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/karatas/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.debian.org/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.9"/>
+    <property name="user.dir" value="/home/karatas/Documents/backend/backend-labs/labs"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Debian"/>
+    <property name="java.vm.version" value="21.0.9+10-Debian-1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="transferFailsWhenInsufficientFunds" classname="backend.BankingServiceTest" time="1.076">
+    <system-out><![CDATA[Hibernate: 
+    drop table if exists accounts cascade 
+Hibernate: 
+    drop table if exists transactions cascade 
+Hibernate: 
+    create table accounts (
+        balance float(53) not null,
+        account_holder varchar(255) not null,
+        account_number varchar(255) not null,
+        primary key (account_number)
+    )
+Hibernate: 
+    create table transactions (
+        amount float(53) not null,
+        id bigint generated by default as identity,
+        transaction_date timestamp(6) not null,
+        recipient_id varchar(255) not null,
+        sender_id varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists transactions 
+       add constraint FKdm2gweu70p7k2l1p2r1ee5xfr 
+       foreign key (recipient_id) 
+       references accounts
+Hibernate: 
+    alter table if exists transactions 
+       add constraint FKep3ko5p4fdvnw79p1uhw2q6nf 
+       foreign key (sender_id) 
+       references accounts
+Hibernate: 
+    insert 
+    into
+        accounts
+        (account_holder,balance,account_number) 
+    values
+        (?,?,?)
+Hibernate: 
+    insert 
+    into
+        accounts
+        (account_holder,balance,account_number) 
+    values
+        (?,?,?)
+Hibernate: 
+    drop table if exists accounts cascade 
+Hibernate: 
+    drop table if exists transactions cascade 
+]]></system-out>
+    <system-err><![CDATA[Nov 08, 2025 12:13:48 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: bankPU]
+Nov 08, 2025 12:13:48 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.2.7.Final
+Nov 08, 2025 12:13:48 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000406: Using bytecode reflection optimizer
+Nov 08, 2025 12:13:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using built-in connection pool (not intended for production use)
+Nov 08, 2025 12:13:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: Loaded JDBC driver class: org.h2.Driver
+Nov 08, 2025 12:13:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001012: Connecting with JDBC URL [jdbc:h2:~/bankdb;DB_CLOSE_DELAY=-1]
+Nov 08, 2025 12:13:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=sa}
+Nov 08, 2025 12:13:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Nov 08, 2025 12:13:48 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH10001115: Connection pool size: 20 (min=1)
+Nov 08, 2025 12:13:48 PM org.hibernate.bytecode.internal.BytecodeProviderInitiator buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : bytebuddy
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Nov 08, 2025 12:13:49 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2d313c8c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Nov 08, 2025 12:13:49 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5b2b8d86] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Nov 08, 2025 12:13:49 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@56fda064] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:~/bankdb;DB_CLOSE_DELAY=-1]
+]]></system-err>
+  </testcase>
+  <testcase name="transferMovesMoneyBetweenAccounts" classname="backend.BankingServiceTest" time="0.078">
+    <system-out><![CDATA[Hibernate: 
+    drop table if exists accounts cascade 
+Hibernate: 
+    drop table if exists transactions cascade 
+Hibernate: 
+    create table accounts (
+        balance float(53) not null,
+        account_holder varchar(255) not null,
+        account_number varchar(255) not null,
+        primary key (account_number)
+    )
+Hibernate: 
+    create table transactions (
+        amount float(53) not null,
+        id bigint generated by default as identity,
+        transaction_date timestamp(6) not null,
+        recipient_id varchar(255) not null,
+        sender_id varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists transactions 
+       add constraint FKdm2gweu70p7k2l1p2r1ee5xfr 
+       foreign key (recipient_id) 
+       references accounts
+Hibernate: 
+    alter table if exists transactions 
+       add constraint FKep3ko5p4fdvnw79p1uhw2q6nf 
+       foreign key (sender_id) 
+       references accounts
+Hibernate: 
+    insert 
+    into
+        accounts
+        (account_holder,balance,account_number) 
+    values
+        (?,?,?)
+Hibernate: 
+    insert 
+    into
+        accounts
+        (account_holder,balance,account_number) 
+    values
+        (?,?,?)
+Hibernate: 
+    update
+        accounts 
+    set
+        account_holder=?,
+        balance=? 
+    where
+        account_number=?
+Hibernate: 
+    update
+        accounts 
+    set
+        account_holder=?,
+        balance=? 
+    where
+        account_number=?
+Hibernate: 
+    drop table if exists accounts cascade 
+Hibernate: 
+    drop table if exists transactions cascade 
+]]></system-out>
+    <system-err><![CDATA[Nov 08, 2025 12:13:49 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: bankPU]
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using built-in connection pool (not intended for production use)
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: Loaded JDBC driver class: org.h2.Driver
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001012: Connecting with JDBC URL [jdbc:h2:~/bankdb;DB_CLOSE_DELAY=-1]
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=sa}
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH10001115: Connection pool size: 20 (min=1)
+Nov 08, 2025 12:13:49 PM org.hibernate.bytecode.internal.BytecodeProviderInitiator buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : bytebuddy
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Nov 08, 2025 12:13:49 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5b742bc8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Nov 08, 2025 12:13:49 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@74fb5b59] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Nov 08, 2025 12:13:49 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@167a21b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:~/bankdb;DB_CLOSE_DELAY=-1]
+]]></system-err>
+  </testcase>
+  <testcase name="createAccountStoresInitialBalance" classname="backend.BankingServiceTest" time="0.062">
+    <system-out><![CDATA[Hibernate: 
+    drop table if exists accounts cascade 
+Hibernate: 
+    drop table if exists transactions cascade 
+Hibernate: 
+    create table accounts (
+        balance float(53) not null,
+        account_holder varchar(255) not null,
+        account_number varchar(255) not null,
+        primary key (account_number)
+    )
+Hibernate: 
+    create table transactions (
+        amount float(53) not null,
+        id bigint generated by default as identity,
+        transaction_date timestamp(6) not null,
+        recipient_id varchar(255) not null,
+        sender_id varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists transactions 
+       add constraint FKdm2gweu70p7k2l1p2r1ee5xfr 
+       foreign key (recipient_id) 
+       references accounts
+Hibernate: 
+    alter table if exists transactions 
+       add constraint FKep3ko5p4fdvnw79p1uhw2q6nf 
+       foreign key (sender_id) 
+       references accounts
+Hibernate: 
+    insert 
+    into
+        accounts
+        (account_holder,balance,account_number) 
+    values
+        (?,?,?)
+Hibernate: 
+    drop table if exists accounts cascade 
+Hibernate: 
+    drop table if exists transactions cascade 
+]]></system-out>
+    <system-err><![CDATA[Nov 08, 2025 12:13:49 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: bankPU]
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using built-in connection pool (not intended for production use)
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: Loaded JDBC driver class: org.h2.Driver
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001012: Connecting with JDBC URL [jdbc:h2:~/bankdb;DB_CLOSE_DELAY=-1]
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=sa}
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH10001115: Connection pool size: 20 (min=1)
+Nov 08, 2025 12:13:49 PM org.hibernate.bytecode.internal.BytecodeProviderInitiator buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : bytebuddy
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Nov 08, 2025 12:13:49 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@50f4b83d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Nov 08, 2025 12:13:49 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@10131289] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Nov 08, 2025 12:13:49 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@30036a18] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Nov 08, 2025 12:13:49 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:h2:~/bankdb;DB_CLOSE_DELAY=-1]
+]]></system-err>
+  </testcase>
+</testsuite>

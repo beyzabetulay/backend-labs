@@ -1,6 +1,10 @@
 /home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/controller/BankAccountController.java
 /home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/domain/BankAccount.java
 /home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/domain/MoneyTransferService.java
-/home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/persistence/BankAccountEntity.java
+/home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/exception/AccountNotFoundException.java
+/home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/exception/InsufficientFundsException.java
 /home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/persistence/DatabaseAdapter.java
+/home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/persistence/entity/AccountEntity.java
+/home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/persistence/entity/TransactionEntity.java
 /home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/port/BankAccountRepository.java
+/home/karatas/Documents/backend/backend-labs/labs/src/main/java/backend/service/BankingService.java

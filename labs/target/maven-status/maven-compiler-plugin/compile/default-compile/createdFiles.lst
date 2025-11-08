@@ -1,6 +1,10 @@
+backend/exception/AccountNotFoundException.class
 backend/port/BankAccountRepository.class
-backend/persistence/BankAccountEntity.class
+backend/service/BankingService.class
 backend/controller/BankAccountController.class
 backend/persistence/DatabaseAdapter.class
+backend/persistence/entity/AccountEntity.class
+backend/persistence/entity/TransactionEntity.class
+backend/exception/InsufficientFundsException.class
 backend/domain/MoneyTransferService.class
 backend/domain/BankAccount.class
